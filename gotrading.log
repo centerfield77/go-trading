@@ -1,8 +1,0 @@
-2022/01/19 09:09:50 main.go:11: test
-2022/01/20 08:49:11 bitflyer.go:55: action=doRequest endpoint=https://api.bitflyer.com/v1/me/getbalance
-2022/01/20 08:49:11 bitflyer.go:90: url=me/getbalance resp=[{"currency_code":"JPY","amount":0.0,"available":0.0},{"currency_code":"BTC","amount":0.0,"available":0.0},{"currency_code":"BCH","amount":0.0,"available":0.0},{"currency_code":"ETH","amount":0.0,"available":0.0},{"currency_code":"ETC","amount":0.0,"available":0.0},{"currency_code":"LTC","amount":0.0,"available":0.0},{"currency_code":"MONA","amount":0.0,"available":0.0},{"currency_code":"LSK","amount":0.0,"available":0.0},{"currency_code":"XRP","amount":0.0,"available":0.0},{"currency_code":"BAT","amount":0.0,"available":0.0},{"currency_code":"XLM","amount":0.0,"available":0.0},{"currency_code":"XEM","amount":0.0,"available":0.0},{"currency_code":"XTZ","amount":0.0,"available":0.0},{"currency_code":"DOT","amount":0.0,"available":0.0},{"currency_code":"LINK","amount":0.0,"available":0.0}]
-2022/01/21 08:47:37 bitflyer.go:213: connecting to wss://ws.lightstream.bitflyer.com/json-rpc
-2022/01/21 08:51:39 bitflyer.go:166: connecting to wss://ws.lightstream.bitflyer.com/json-rpc
-2022/01/21 08:57:32 bitflyer.go:166: connecting to wss://ws.lightstream.bitflyer.com/json-rpc
-2022/01/21 08:59:17 bitflyer.go:213: connecting to wss://ws.lightstream.bitflyer.com/json-rpc
-2022/01/21 09:03:08 bitflyer.go:166: connecting to wss://ws.lightstream.bitflyer.com/json-rpc
