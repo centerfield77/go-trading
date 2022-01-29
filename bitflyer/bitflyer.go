@@ -242,27 +242,27 @@ func (api *APIClient) SendOrder(order *Order) (*ResponseSendChildOrder, error) {
 		return nil, err
 	}
 	url := "me/sendchildorder"
-	resp,err := api.doRequest("POST",url,map[string]string{},data)
+	resp, err := api.doRequest("POST", url, map[string]string{}, data)
 	if err != nil {
-		return nil , err
+		return nil, err
 	}
 	var response ResponseSendChildOrder
 	err = json.Unmarshal(resp, &response)
 	if err != nil {
-		return nil , err
+		return nil, err
 	}
-	return &response,nil
+	return &response, nil
 }
 
-func (api * APIClient) ListOrder(query map[string]string) ([]Order,error) {
-	resp, err := api.doRequest("GET","me/getchildorders",query,nil)
+func (api *APIClient) ListOrder(query map[string]string) ([]Order, error) {
+	resp, err := api.doRequest("GET", "me/getchildorders", query, nil)
 	if err != nil {
-		return  nil, err
+		return nil, err
 	}
 	var responseListOrder []Order
 	err = json.Unmarshal(resp, &responseListOrder)
 	if err != nil {
-		return nil,err
+		return nil, err
 	}
-	return responseListOrder,nil
+	return responseListOrder, nil
 }
