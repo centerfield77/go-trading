@@ -13,11 +13,12 @@ type ConfigList struct {
 	ApiSecret   string
 	LogFile     string
 	ProductCode string
+
 	TradeDuration time.Duration
-	Durations map[string]time.Duration
-	DbName string
-	SQLDriver string
-	Port int
+	Durations     map[string]time.Duration
+	DbName        string
+	SQLDriver     string
+	Port          int
 }
 
 var Config ConfigList
@@ -30,9 +31,9 @@ func init() {
 	}
 
 	durations := map[string]time.Duration{
-		"ls": time.Second,
-		"lm": time.Minute,
-		"lh": time.Hour,
+		"1s": time.Second,
+		"1m": time.Minute,
+		"1h": time.Hour,
 	}
 
 	Config = ConfigList{
