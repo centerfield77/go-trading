@@ -7,13 +7,6 @@ import (
 	"log"
 )
 
-// func main() {
-// 	utils.LoggingSettings(config.Config.LogFile)
-// 	fmt.Println(models.DbConnection)
-// 	controllers.StreamIngestionData()
-// 	controllers.StartWebServer()
-// }
-
 func main() {
 	utils.LoggingSettings(config.Config.LogFile)
 	controllers.StreamIngestionData()

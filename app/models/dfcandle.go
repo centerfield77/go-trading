@@ -487,6 +487,20 @@ func (df *DataFrameCandle) OptimizeParams() *TradeParams {
 		}
 	}
 
+	isEnable := false
+	for i, ranking := range rankings {
+		if i >= config.Config.NumRanking {
+			break
+		}
+		if ranking.Performance > 0 {
+			ranking.Enable = true
+			isEnable = true
+		}
+	}
+	if !isEnable {
+		return nil
+	}
+
 	tradeParams := &TradeParams{
 		EmaEnable:        emaRanking.Enable,
 		EmaPeriod1:       emaPeriod1,
